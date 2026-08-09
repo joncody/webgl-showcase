@@ -3,10 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="author" content="Jonathan Cody">
-    <title>CSE-160: Assignments Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jonathan Cody | WebGL & 3D Computer Graphics Showcase</title>
     <style>
         body {
-            font-family: 'Segoe UI', Tahoma, sans-serif;
+            font-family: 'Segoe UI', Tahoma, system-ui, -apple-system, sans-serif;
             background-color: #1e1e1e;
             color: #e0e0e0;
             display: flex;
@@ -14,20 +15,33 @@
             align-items: center;
             padding: 40px 20px;
             margin: 0;
+            min-height: 100vh;
+            box-sizing: border-box;
+        }
+        header {
+            text-align: center;
+            margin-bottom: 35px;
+            max-width: 600px;
         }
         h1 {
             color: #4fc3f7;
-            margin-bottom: 30px;
+            margin: 0 0 10px 0;
             font-size: 2.2rem;
             letter-spacing: 1px;
-            text-align: center;
+        }
+        p.subtitle {
+            color: #aaa;
+            font-size: 1rem;
+            margin: 0;
+            line-height: 1.5;
         }
         .portfolio-card {
             background-color: #2d2d2d;
-            padding: 25px;
+            padding: 30px;
             border-radius: 12px;
             box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
-            width: 480px;
+            width: 100%;
+            max-width: 650px;
             box-sizing: border-box;
             border-top: 4px solid #4fc3f7;
         }
@@ -37,47 +51,134 @@
             margin: 0;
         }
         li {
-            margin: 12px 0;
+            margin-bottom: 16px;
         }
-        a {
+        li:last-child {
+            margin-bottom: 0;
+        }
+        a.project-link {
             color: #e0e0e0;
             text-decoration: none;
             display: block;
-            padding: 16px 20px;
+            padding: 18px 22px;
             background-color: #383838;
             border-radius: 8px;
             transition: all 0.2s ease-in-out;
             border: 1px solid #444;
-            font-weight: 500;
         }
-        a:hover {
+        a.project-link:hover {
             background-color: #444;
-            color: #4fc3f7;
+            color: #ffffff;
             border-color: #4fc3f7;
-            transform: translateX(10px);
+            transform: translateX(8px);
+        }
+        .project-title {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: #4fc3f7;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .project-tag {
+            font-size: 0.75rem;
+            color: #888;
+            font-weight: normal;
+            background: #282828;
+            padding: 3px 8px;
+            border-radius: 4px;
+        }
+        .project-desc {
+            font-size: 0.88rem;
+            color: #bbb;
+            margin-top: 6px;
+            font-weight: 400;
         }
         .footer {
-            margin-top: 50px;
-            font-size: 0.75rem;
-            color: #666;
-            text-transform: uppercase;
-            letter-spacing: 2px;
+            margin-top: auto;
+            padding-top: 40px;
+            font-size: 0.8rem;
+            color: #888;
             text-align: center;
+            line-height: 1.6;
+        }
+        .footer a {
+            color: #4fc3f7;
+            text-decoration: none;
+        }
+        .footer a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
 <body>
-    <h1>Computer Graphics Portfolio</h1>
+    <header>
+        <h1>Interactive WebGL Showcase</h1>
+        <p class="subtitle">Real-time 3D graphics, GLSL shaders, and custom math engines.</p>
+    </header>
+
     <div class="portfolio-card">
         <ul>
-            <li><a href="asgn0/src/asgn0.html">Assignment 0: Vector Library</a></li>
-            <li><a href="asgn1/src/asgn1.html">Assignment 1: WebGL Paint</a></li>
-            <li><a href="asgn2/src/asgn2.html">Assignment 2: Blocky Animal</a></li>
-            <li><a href="asgn3/src/asgn3.html">Assignment 3: Virtual World</a></li>
-            <li><a href="asgn4/src/asgn4.html">Assignment 4: Full Lighting</a></li>
-            <li><a href="asgn5/src/asgn5.html">Assignment 5: The Reliquary of Hanzo</a></li>
+            <li>
+                <a class="project-link" href="reliquary-of-hanzo/src/reliquary-of-hanzo.html">
+                    <div class="project-title">
+                        <span>The Reliquary of Hanzo</span>
+                        <span class="project-tag">Final Showcase</span>
+                    </div>
+                    <div class="project-desc">Complex 3D environment featuring custom obj loading, lighting, and interactive elements.</div>
+                </a>
+            </li>
+            <li>
+                <a class="project-link" href="full-lighting/src/full-lighting.html">
+                    <div class="project-title">
+                        <span>Full Shader Lighting Engine</span>
+                        <span class="project-tag">GLSL Shaders</span>
+                    </div>
+                    <div class="project-desc">Real-time Phong lighting, specular reflections, normal vectors, and point lights.</div>
+                </a>
+            </li>
+            <li>
+                <a class="project-link" href="virtual-world/src/virtual-world.html">
+                    <div class="project-title">
+                        <span>3D Virtual World</span>
+                        <span class="project-tag">Environment</span>
+                    </div>
+                    <div class="project-desc">Navigable 3D world with texture mapping, camera matrix transformations, and world collision.</div>
+                </a>
+            </li>
+            <li>
+                <a class="project-link" href="blocky-animal/src/blocky-animal.html">
+                    <div class="project-title">
+                        <span>Blocky Animal Animation</span>
+                        <span class="project-tag">Hierarchical 3D</span>
+                    </div>
+                    <div class="project-desc">Interactive 3D character featuring multi-joint hierarchical modeling and animation controls.</div>
+                </a>
+            </li>
+            <li>
+                <a class="project-link" href="webgl-paint/src/webgl-paint.html">
+                    <div class="project-title">
+                        <span>WebGL Paint App</span>
+                        <span class="project-tag">2D Rendering</span>
+                    </div>
+                    <div class="project-desc">Interactive 2D vector painting tool built with WebGL points, triangles, and color picking.</div>
+                </a>
+            </li>
+            <li>
+                <a class="project-link" href="vector-library/src/vector-library.html">
+                    <div class="project-title">
+                        <span>2D Vector Library</span>
+                        <span class="project-tag">Math Core</span>
+                    </div>
+                    <div class="project-desc">Custom JavaScript vector math library for 2D operations, dot products, and cross products.</div>
+                </a>
+            </li>
         </ul>
     </div>
-    <div class="footer">University of California, Santa Cruz<br>CSE-160 &bull; Jonathan Cody &bull; jdcody@ucsc.edu</div>
+
+    <div class="footer">
+        Created by <strong>Jonathan Cody</strong> &bull; UC Santa Cruz (CSE 160)<br>
+        <a href="https://github.com/joncody">GitHub Profile</a> &bull; <a href="mailto:jdcody@ucsc.edu">jdcody@ucsc.edu</a>
+    </div>
 </body>
 </html>

@@ -1,8 +1,8 @@
-# Assignment 5: The Reliquary of Hanzo
+# The Reliquary of Hanzo
 **Jon Cody** - jdcody@ucsc.edu
 
-## Notes to Grader:
-All requirements for Assignment 5 have been successfully implemented using the **Three.js** library. This project creates a cinematic, high-performance Japanese shrine environment featuring recursive procedural generation, advanced lighting math, and optimized geometry batching.
+## Notes:
+This project creates a cinematic, high-performance Japanese shrine environment featuring recursive procedural generation, advanced lighting math, and optimized geometry batching using the **Three.js** library.
 
 **Key Technical Features:**
 *   **Procedural Fractal Forest:** Replaced standard loops with a **Recursive Radial Branching** algorithm. Each of the 9 massive trees is mathematically grown with "Tropism" (skyward growth pull) and a 3-way radial split, creating a complex, organic canopy.
@@ -30,9 +30,9 @@ All requirements for Assignment 5 have been successfully implemented using the *
 ```text
 .
 ├── src
-│   ├── asgn5.html
-│   ├── asgn5.js
-│   ├── asgn5.css
+│   ├── reliquary-of-hanzo.html
+│   ├── reliquary-of-hanzo.js
+│   ├── reliquary-of-hanzo.css
 │   ├── grass.png                     <-- Ground Texture
 │   ├── dirt.png                      <-- Path/Stairs Texture
 │   ├── dragon.obj                    <-- Guardian Models

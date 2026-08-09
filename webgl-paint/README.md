@@ -1,8 +1,8 @@
-# Assignment 1: WebGL Paint Program
+# WebGL Paint Program
 **Jon Cody** - jdcody@ucsc.edu
 
-## Notes to Grader:
-All basic and advanced requirements for Assignment 1 have been successfully implemented. The application uses a WebGL context to render squares (points), triangles, and circles. A modular, object-oriented approach was used, with each shape type stored in its own class file and managed within a global `g_shapesList`.
+## Notes:
+The application uses a WebGL context to render squares (points), triangles, and circles. A modular, object-oriented approach was used, with each shape type stored in its own class file and managed within a global `g_shapesList`.
 
 The "Special Picture" (Requirement 12) recreates the provided hand-drawn sketch and features my initials **"JDC"** explicitly colored Red, Green, and Blue. The entire scene uses over 25 triangles to satisfy the detail requirement. The UI is strictly capped at a 480px width and is positioned vertically under the canvas for a clean, mobile-friendly layout.
 
@@ -18,9 +18,9 @@ The "Special Picture" (Requirement 12) recreates the provided hand-drawn sketch 
     │   └── cuon-utils.js
     ├── README.md
     └── src
-        ├── asgn1.html
-        ├── asgn1.js
-        ├── asgn1.css
+        ├── webgl-paint.html
+        ├── webgl-paint.js
+        ├── webgl-paint.css
         ├── Point.js
         ├── Triangle.js
         ├── Circle.js
@@ -28,7 +28,7 @@ The "Special Picture" (Requirement 12) recreates the provided hand-drawn sketch 
 
 ## How to Run:
 1. Navigate to the `src` directory.
-2. Open `asgn1.html` in any modern web browser (Chrome or Firefox recommended).
+2. Open `webgl-paint.html` in any modern web browser (Chrome or Firefox recommended).
 3. Use the **Drawing Mode** buttons to select a brush.
 4. Adjust **Color (0-255)**, **Alpha (0-100)**, and **Size** using the sliders.
 5. Click or drag on the canvas to paint.

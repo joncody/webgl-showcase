@@ -1,8 +1,8 @@
-# Assignment 4: Lighting
+# Lighting
 **Jon Cody** - jdcody@ucsc.edu
 
-## Notes to Grader:
-All requirements for Assignment 4 have been successfully implemented. This project upgrades the first-person voxel world from Assignment 3 into a sophisticated lighting engine featuring **Phong Shading**, dynamic **Point Lights**, a directed **Spotlight**, and support for high-detail **OBJ models**.
+## Notes:
+This project upgrades the first-person voxel world from virtual-world into a sophisticated lighting engine featuring **Phong Shading**, dynamic **Point Lights**, a directed **Spotlight**, and support for high-detail **OBJ models**.
 
 **Key Technical Features:**
 *   **Phong Shading Model:** Implemented Ambient, Diffuse, and Specular lighting in the Fragment shader for pixel-perfect specular highlights.
@@ -14,9 +14,9 @@ All requirements for Assignment 4 have been successfully implemented. This proje
 ## Awesomeness (Creativity):
 1.  **The Circular Gallery Arrangement:** Instead of static placement, I implemented a uniform circular gallery. All 7 interactive items (Bunny, Teapot, Benchy, Trumpet, Dragon, Red Sphere, and Pink Diamond) are spaced exactly 51.4 degrees apart around the Scorpion using trigonometry.
 2.  **Visual Polish & Calibrated Hovering:** Every object is calibrated to hover exactly "one foot" (approx. 0.3 units) above the textured floor. Each OBJ model features a unique color scheme (e.g., Orange Benchy, Purple Bunny, Gold Trumpet) to specifically demonstrate how different materials react to specular highlights.
-3.  **Centered Animal Focus:** The hierarchical Scorpion from Assignment 2 is positioned at the origin as the centerpiece, featuring full animation (sway, tail oscillation, and strike) that reacts realistically to the orbiting light.
+3.  **Centered Animal Focus:** The hierarchical Scorpion from blocky-animal is positioned at the origin as the centerpiece, featuring full animation (sway, tail oscillation, and strike) that reacts realistically to the orbiting light.
 4.  **Lighting Visualization Mode:** Included a "Normal Visualization" toggle that bypasses colors and textures to render the raw normal vectors as RGB colors, serving as a debugging tool and a stylistic rendering mode.
-5.  **UI Sectioning:** Restored the high-quality UI sections from Assignment 2, providing a clean, dark-themed control panel with active-state feedback on all buttons.
+5.  **UI Sectioning:** Restored the high-quality UI sections from blocky-animal, providing a clean, dark-themed control panel with active-state feedback on all buttons.
 
 ## Controls:
 *   **Movement:** 
@@ -47,9 +47,9 @@ All requirements for Assignment 4 have been successfully implemented. This proje
 │   ├── webgl-debug.js
 │   └── webgl-utils.js
 ├── src
-│   ├── asgn4.html
-│   ├── asgn4.js
-│   ├── asgn4.css
+│   ├── full-lighting.html
+│   ├── full-lighting.js
+│   ├── full-lighting.css
 │   ├── Camera.js
 │   ├── Cube.js
 │   ├── Pyramid.js
@@ -67,7 +67,7 @@ All requirements for Assignment 4 have been successfully implemented. This proje
 
 ## How to Run:
 1.  Navigate to the `src` directory.
-2.  **Crucial Note:** Due to browser security restrictions regarding `fetch()`, you **must** use a local server to run this assignment (e.g., VS Code "Live Server" or `python3 -m http.server`). Opening the `.html` file directly via `file://` will prevent the OBJ models and textures from loading.
+2.  **Crucial Note:** Due to browser security restrictions regarding `fetch()`, you **must** use a local server to run this code (e.g., VS Code "Live Server" or `python3 -m http.server`). Opening the `.html` file directly via `file://` will prevent the OBJ models and textures from loading.
 3.  Use the UI sliders to change the light's color and position to see the Phong shading in action.
 
 ## Features Implemented (Rubric Checklist):
@@ -80,4 +80,4 @@ All requirements for Assignment 4 have been successfully implemented. This proje
 - [x] **Spotlight:** Directed light toggleable and following camera direction.
 - [x] **OBJ Loading:** Successfully rendering complex models with full lighting.
 - [x] **Normal Visualization:** Button implemented to toggle debug view of vertex normals.
-- [x] **UI Polish:** Integrated Assignment 2's clean UI sections and styling.
+- [x] **UI Polish:** Integrated blocky-animal's clean UI sections and styling.

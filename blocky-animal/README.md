@@ -1,8 +1,8 @@
-# Assignment 2: Blocky Animal (3D Hierarchical Scorpion)
+# Blocky Animal (3D Hierarchical Scorpion)
 **Jon Cody** - jdcody@ucsc.edu
 
-## Notes to Grader:
-All basic and advanced requirements for Assignment 2 have been successfully implemented. The application renders a complex 3D Scorpion model using a hierarchical transformation system. Each limb and segment is built using custom `Cube` and `Pyramid` primitive classes.
+## Notes:
+The application renders a complex 3D Scorpion model using a hierarchical transformation system. Each limb and segment is built using custom `Cube` and `Pyramid` primitive classes.
 
 The model features a deeply nested hierarchy:
 *   **Body (Mesosoma):** Four segments that exhibit a side-to-side breathing/sway animation.
@@ -25,15 +25,15 @@ The model features a deeply nested hierarchy:
     │   └── webgl-utils.js
     ├── README.md
     └── src
-        ├── asgn2.css
-        ├── asgn2.html
-        ├── asgn2.js
+        ├── blocky-animal.css
+        ├── blocky-animal.html
+        ├── blocky-animal.js
         ├── Cube.js
         └── Pyramid.js
 
 ## How to Run:
 1. Navigate to the `src` directory.
-2. Open `asgn2.html` in a modern web browser (Chrome or Firefox recommended).
+2. Open `blocky-animal.html` in a modern web browser (Chrome or Firefox recommended).
 3. Use the **Joint Sliders** to manually manipulate the tail, arms, and pincers.
 4. Toggle **Animation ON/OFF** to see the idle breathing and leg-walking movements.
 5. **Left-Click and Drag** on the canvas to rotate the model.

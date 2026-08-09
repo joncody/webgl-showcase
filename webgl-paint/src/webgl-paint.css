@@ -68,7 +68,7 @@ input[type="range"] {
     flex: 1;
     cursor: pointer;
 }
-/* Add this to asgn1.css */
+/* Add this to webgl-paint.css */
 input[type="range"]:disabled {
     cursor: not-allowed;
     opacity: 0.4;

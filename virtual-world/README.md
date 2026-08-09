@@ -1,8 +1,8 @@
-# Assignment 3: Virtual World
+# Virtual World
 **Jon Cody** - jdcody@ucsc.edu
 
-## Notes to Grader:
-All requirements for Assignment 3 have been successfully implemented. This application features a first-person exploration of a randomized 32x32 voxel world. The project integrates the complex hierarchical Scorpion model from Assignment 2 as a central part of a "treasure hunt" game.
+## Notes:
+This application features a first-person exploration of a randomized 32x32 voxel world. The project integrates the complex hierarchical Scorpion model from blocky-animal as a central part of a "treasure hunt" game.
 
 **Key Technical Features:**
 *   **First-Person Camera:** A fully functional camera system supporting 6 degrees of freedom (translation on X, Y, Z axes and rotation for Yaw/Pitch).
@@ -12,7 +12,7 @@ All requirements for Assignment 3 have been successfully implemented. This appli
 
 ## Awesomeness (Creativity):
 1.  **The Scorpion's Quest (Mini-Game):** This is not just a world, but a game. A **Golden Diamond** is spawned at a randomized location in the maze, guarded by the 3D Scorpion.
-    *   The Scorpion features the full hierarchy from Assignment 2 (8 legs, 5-segment tail, and moving pincers).
+    *   The Scorpion features the full hierarchy from blocky-animal (8 legs, 5-segment tail, and moving pincers).
     *   A **Win Condition** is triggered when the player navigates the maze and touches the Diamond.
 2.  **Advanced "Minecraft" Logic:** 
     *   Implemented **Raycasting** for high-precision block building.
@@ -47,9 +47,9 @@ All requirements for Assignment 3 have been successfully implemented. This appli
 │   ├── webgl-debug.js
 │   └── webgl-utils.js
 ├── src
-│   ├── asgn3.html
-│   ├── asgn3.js
-│   ├── asgn3.css
+│   ├── virtual-world.html
+│   ├── virtual-world.js
+│   ├── virtual-world.css
 │   ├── Camera.js
 │   ├── Cube.js
 │   ├── Pyramid.js
@@ -60,7 +60,7 @@ All requirements for Assignment 3 have been successfully implemented. This appli
 
 ## How to Run:
 1.  Navigate to the `src` directory.
-2.  Open `asgn3.html` in a modern web browser (Chrome or Firefox recommended).
+2.  Open `virtual-world.html` in a modern web browser (Chrome or Firefox recommended).
     *   *Note: Due to browser security, textures may require a local server (like Live Server in VS Code) to load correctly.*
 3.  Use the controls listed above to explore the world and find the Scorpion.
 
