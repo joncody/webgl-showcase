@@ -1,7 +1,11 @@
-
 # WebGL & 3D Computer Graphics Showcase
 
-[![Live Demo](https://img.shields.io/badge/Live_Demo-GitHub_Pages-4fc3f7?style=for-the-badge&logo=github)](https://joncody.github.io/webgl-showcase/)
+[![Live Demo](https://img.shields.io/badge/Live_Demo-GitHub_Pages-4fc3f7?style=flat&logo=github)](https://joncody.github.io/webgl-showcase/)
+[![WebGL](https://img.shields.io/badge/WebGL-990000?style=flat&logo=webgl&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/API/WebGL_API)
+[![GLSL](https://img.shields.io/badge/GLSL-OpenGL%20Shaders-5586A4?style=flat&logo=opengl&logoColor=white)](https://www.khronos.org/opengl/wiki/OpenGL_Shading_Language)
+[![JavaScript](https://img.shields.io/badge/JavaScript-ES6+-F7DF1E?style=flat&logo=javascript&logoColor=black)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+[![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat&logo=html5&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/HTML)
+[![License](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
 
 An interactive collection of real-time 3D web graphics projects implemented in raw WebGL, custom GLSL shader programs, and vanilla JavaScript.
 
